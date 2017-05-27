@@ -1,30 +1,34 @@
-Git log										It is used to view all the commits that were made including the commitID, author, date and the commit messages.Press q to stop												viewing the output of git log
+Git log							It is used to view all the commits that were made including the commitID, author, date and the commit messages.Press q to stop												viewing the output of git log
 Git diff commitID1 commitID2 				it tells the differences that were made between the two commits
-											Git repository is a collection of all files
-git log --stat 								tells me which file was changed in each commit.How many insertions/deletions were done
-git clone url								downloads the entire repository with the entire history
-git config									makes changes to the settings of git
-											--global flag applies those settings to all your git repositories
-git config --global color.ui auto   		Adds color to the git output
-											HEAD tells on which commit you currently are working on
-git checkout commitID 						it is used to change the head to this ID. you revert backwards
-git init									Used to initialize a new directory
-git status									to see if there are some files that you have not committed yet
-git add  file.txt							Adds the file to the staging area. Now this file can be commited to send to the commiting area
-git reset file.txt							Removes the file from the staging area and putis it back to the untracked area
-git diff 									Compares the working directory with the staging area
-git diff --staged 							Compares the staging area with the most recent commit
-git reset --hard							Resets the staging area and the working directory
-git branch									Lists down all the current branches with * sign infront of the current branch
-git branch newname							Creates the new branch newname
-git checkout branchname						Changes the current working branch
-git log --graph --oneline branch1 branch2	View the diagram for what how the two branches differ in commits
-git checkout -b branchname					Creates a new branch branchname and checks out to it
-git branch -d branchname					Deletes the label to the branchname
-git show commitID 							Shows the differences between the commitID and its parent
-git merge --abort							Restore your files to their state before you started the merge by running in case you get a merge CONFLICT
-git merge branch1 branch2					Merges the two branches
-git remote add origin url					Adds the repository pointed to by the url to the remote
-git remote									See all the remotes
+							Git repository is a collection of all files
+git log --stat 						tells me which file was changed in each commit.How many insertions/deletions were done
+git clone url						downloads the entire repository with the entire history
+git config						makes changes to the settings of git
+							--global flag applies those settings to all your git repositories
+git config --global color.ui auto   			Adds color to the git output
+							HEAD tells on which commit you currently are working on
+git checkout commitID 					it is used to change the head to this ID. you revert backwards
+git init						Used to initialize a new directory
+git status						to see if there are some files that you have not committed yet
+git add  file.txt					Adds the file to the staging area. Now this file can be commited to send to the commiting area
+git reset file.txt					Removes the file from the staging area and putis it back to the untracked area
+git diff 						Compares the working directory with the staging area
+git diff --staged 					Compares the staging area with the most recent commit
+git reset --hard					Resets the staging area and the working directory
+git branch						Lists down all the current branches with * sign infront of the current branch
+git branch newname					Creates the new branch newname
+git checkout branchname					Changes the current working branch
+git log --graph --oneline branch1 branch2		View the diagram for what how the two branches differ in commits
+git checkout -b branchname				Creates a new branch branchname and checks out to it
+git branch -d branchname				Deletes the label to the branchname
+git show commitID 					Shows the differences between the commitID and its parent
+git merge --abort					Restore your files to their state before you started the merge by running in case you get a merge CONFLICT
+git merge branch1 branch2				Merges the two branches
+git remote add origin url				Adds the repository pointed to by the url to the remote
+git remote						See all the remotes
+git push origin master					Pushes the master branch to the github repository pointed out by remote
+git commit -m "ddd"					Commits ie adds changes from staging area to the commited area
+git pull origin master					Pulls the changes from github to your local repository and merges the local and the repository versions
+git pull origin master					git fetch origin + git merge master origin/master
 
 	
